@@ -36,3 +36,6 @@ async-
     await pauses the function until the promise resolves
     (It waits for the long-time task to complete. Only after the promise is resolved—either successfully 
     or with an error—does it continue to the next line of code)
+-----------------------------------------------------------------------------------------------------------------------
+
+Day 2- Build a RESTful API with Express.js that interacts with a MongoDB database.
