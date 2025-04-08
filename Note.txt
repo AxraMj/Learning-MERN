@@ -1,0 +1,38 @@
+npm init- is a command used to initialize a new Node.js project. It helps you create a package.json file, which is essential for managing your project’s metadata and dependencies.
+
+npm init -y :This will create a package.json file with default values.
+
+const app = express() is a line of code used in Node.js when you're setting up a server with Express, a popular web framework.
+    -const express = require('express'); // Import the express module
+    -const app = express(); // Create an instance of the Express application
+
+    This app object is now your Express application, and you can use it to:
+    -define routes (app.get(), app.post(), etc.)
+    -handle requests and responses
+    -use middleware (app.use())
+    -start the server (app.listen())
+
+app.use(cors());
+    -Allows your backend server to accept requests from a different origin (domain/port)—like your frontend React app.
+    -By default, browsers block cross-origin HTTP requests for security. This enables your React frontend (maybe on http://localhost:3000) 
+     to talk to your Express backend (maybe on http://localhost:5000).
+    
+app.use(express.json())  // Allow backend to read JSON in requests
+    Lets your Express app parse JSON data automatically from the request body.
+    If you send a POST request with JSON (like {"name": "Akshara"}), this middleware makes sure you can access it in your route using:
+
+    req.body.name
+
+    Without this, req.body will be undefined.
+
+    note: parse means To read and convert data into a format your code can understand and work with.
+
+dotenv.config()  
+    load environment variables from a .env file into your Node.js application.
+    It reads your .env file and adds the variables inside it to process.env
+
+async-
+    async allows you to use await inside the function
+    await pauses the function until the promise resolves
+    (It waits for the long-time task to complete. Only after the promise is resolved—either successfully 
+    or with an error—does it continue to the next line of code)
